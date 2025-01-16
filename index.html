@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EliDevOS- Desarrollador Móvil</title>
+    <title>EliDevOS - Desarrollador Móvil</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!-- Font Awesome para íconos -->
@@ -14,6 +14,9 @@
     <header class="header">
         <nav class="nav-container">
             <a href="#" class="logo">EliDevOS</a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul class="nav-links">
                 <li><a href="#inicio" class="active">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -135,8 +138,8 @@ class JuniorDeveloper {
         <div class="projects-grid">
             <!-- Proyecto 1 -->
             <div class="project-card">
-                <div class="project-image" onclick="openModal(this)">
-                    <img src="proyecto1.jpg" alt="App Todo List">
+                <div class="project-image" onclick="openModal('project1')">
+                    <img src="images/projects/project1/thumbnail.jpg" alt="App Todo List" loading="lazy">
                     <div class="project-overlay">
                         <div class="view-screens">
                             <i class="fas fa-expand"></i>
@@ -164,8 +167,8 @@ class JuniorDeveloper {
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image" onclick="openModal(this)">
-                    <img src="proyecto1.jpg" alt="App Todo List">
+                <div class="project-image" onclick="openModal('project2')">
+                    <img src="images/projects/project1/thumbnail.jpg" alt="App Todo List" loading="lazy">
                     <div class="project-overlay">
                         <div class="view-screens">
                             <i class="fas fa-expand"></i>
@@ -193,8 +196,8 @@ class JuniorDeveloper {
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image" onclick="openModal(this)">
-                    <img src="proyecto1.jpg" alt="App Todo List">
+                <div class="project-image" onclick="openModal('project3')">
+                    <img src="images/projects/project1/thumbnail.jpg" alt="App Todo List" loading="lazy">
                     <div class="project-overlay">
                         <div class="view-screens">
                             <i class="fas fa-expand"></i>
@@ -222,8 +225,8 @@ class JuniorDeveloper {
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image" onclick="openModal(this)">
-                    <img src="proyecto1.jpg" alt="App Todo List">
+                <div class="project-image" onclick="openModal('project4')">
+                    <img src="images/projects/project1/thumbnail.jpg" alt="App Todo List" loading="lazy">
                     <div class="project-overlay">
                         <div class="view-screens">
                             <i class="fas fa-expand"></i>
@@ -251,8 +254,8 @@ class JuniorDeveloper {
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image" onclick="openModal(this)">
-                    <img src="proyecto1.jpg" alt="App Todo List">
+                <div class="project-image" onclick="openModal('project6')">
+                    <img src="images/projects/project1/thumbnail.jpg" alt="App Todo List" loading="lazy">
                     <div class="project-overlay">
                         <div class="view-screens">
                             <i class="fas fa-expand"></i>
@@ -318,9 +321,9 @@ class JuniorDeveloper {
         <h2>Contacto</h2>
         <div class="contact-container">
             <div class="contact-info">
-                <a href="mailto:tuemail@ejemplo.com"><i class="fas fa-envelope"></i> tuemail@ejemplo.com</a>
-                <a href="https://linkedin.com/in/tu-perfil"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/tu-usuario"><i class="fab fa-github"></i> GitHub</a>
+                <a href="mailto:elidevosdm@ejemplo.com"><i class="fas fa-envelope"></i> EliDevOSDM@ejemplo.com</a>
+                <a href="https://www.linkedin.com/in/elias-dlucca-634821332/?trk=opento_sprofile_topcard"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/elidevosdm"><i class="fab fa-github"></i> GitHub</a>
             </div>
         </div>
     </section>
@@ -336,11 +339,8 @@ class JuniorDeveloper {
     <div id="screensModal" class="modal">
         <span class="close-modal">&times;</span>
         <div class="modal-content">
-            <div class="screens-gallery">
-                <img src="screen1.jpg" alt="Pantalla 1">
-                <img src="screen2.jpg" alt="Pantalla 2">
-                <img src="screen3.jpg" alt="Pantalla 3">
-                <!-- Agrega más pantallas según necesites -->
+            <div class="screens-gallery" id="modalGallery">
+                <!-- Las imágenes se cargarán dinámicamente con JavaScript -->
             </div>
         </div>
     </div>

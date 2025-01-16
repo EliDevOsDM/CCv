@@ -69,16 +69,42 @@ window.addEventListener('scroll', () => {
 });
 
 // Funciones para el modal
-function openModal(element) {
+const projectImages = {
+    'project1': [
+        {
+            src: 'src/img/yo.jpg',
+            alt: 'Pantalla de inicio'
+        },
+        {
+            src: 'images/projects/project1/screen2.jpg',
+            alt: 'Lista de tareas'
+        }
+        // ... más imágenes
+    ],
+    // ... más proyectos
+};
+
+function openModal(projectId) {
     const modal = document.getElementById('screensModal');
+    const gallery = document.getElementById('modalGallery');
+    
+    // Limpiar galería existente
+    gallery.innerHTML = '';
+    
+    // Cargar imágenes del proyecto
+    projectImages[projectId].forEach(image => {
+        const img = document.createElement('img');
+        img.src = image.src;
+        img.alt = image.alt;
+        gallery.appendChild(img);
+    });
+    
     modal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
 }
 
-function closeModal() {
-    const modal = document.getElementById('screensModal');
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
+// Cerrar modal
+document.querySelector('.close-modal').onclick = function() {
+    document.getElementById('screensModal').style.display = 'none';
 }
 
 // Event Listeners
@@ -104,5 +130,20 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.key === 'Escape') {
             closeModal();
         }
+    });
+});
+
+// Menú móvil
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Cerrar menú al hacer click en un enlace
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
     });
 });

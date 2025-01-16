@@ -1036,3 +1036,219 @@
         font-size: 0.75rem;
     }
   }
+
+  /* Navegación móvil */
+  @media (max-width: 768px) {
+    .nav-container {
+      padding: 10px;
+    }
+
+    .nav-links {
+      display: none; /* Ocultamos el menú por defecto */
+      position: fixed;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: rgba(10, 10, 10, 0.95);
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    /* Agregamos hamburger menu */
+    .menu-toggle {
+      display: block;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  /* Hero section responsive */
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 120px 20px 60px;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-content h2 {
+      font-size: 1.8rem;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+
+  /* About section responsive */
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 0;
+    }
+
+    .stats-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .code-window {
+      margin-top: 30px;
+    }
+  }
+
+  /* Tecnologías responsive */
+  @media (max-width: 768px) {
+    .tech-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 0 15px;
+    }
+
+    .tech-card {
+      padding: 20px 15px;
+    }
+  }
+
+  /* Proyectos responsive */
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 15px;
+    }
+
+    .project-card {
+      max-width: 100%;
+    }
+  }
+
+  /* Servicios responsive */
+  @media (max-width: 768px) {
+    .services-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 0 15px;
+    }
+  }
+
+  /* Contacto responsive */
+  @media (max-width: 768px) {
+    .contact-info {
+      padding: 0 15px;
+    }
+  }
+
+  /* Ajustes adicionales para móviles pequeños */
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    .stats-container {
+      grid-template-columns: 1fr;
+    }
+
+    .tech-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Estilos para el menú hamburguesa */
+  .menu-toggle {
+    display: none; /* Oculto por defecto en desktop */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .menu-toggle:hover {
+    color: var(--primary-color);
+  }
+
+  /* Ajustes responsive para la navegación */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* Mostrar en mobile */
+    }
+
+    .nav-container {
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: var(--darker-bg);
+      padding: 20px 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .nav-links li {
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-links li a {
+      display: block;
+      padding: 15px 20px;
+      width: 100%;
+    }
+
+    /* Quitar el efecto de línea en mobile */
+    .nav-links li::after {
+      display: none;
+    }
+  }
+
+  * Ajuste del contenido principal para dar espacio al menú lateral */
+main {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+
+  main {
+    margin-left: 0;
+    width: 100%;
+    padding-top: 0; /* Elimina cualquier padding superior */
+  }
+
+  .hero-section {
+    padding-top: 20px; /* Reduce el padding superior */
+    min-height: calc(100vh - 20px); /* Ajusta la altura considerando el padding */
+  }
+
+  body {
+    padding-top: 0; /* Asegura que no haya padding superior en el body */
+  }
+}
