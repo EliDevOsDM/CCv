@@ -659,17 +659,20 @@
     padding: 20px;
   }
   
+  /* Estilos para la ventana de código */
   .code-window {
     background: var(--darker-bg);
     border-radius: 15px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: calc(100% - 30px); /* Ancho total menos márgenes */
+    margin: 15px auto; /* Márgenes iguales arriba/abajo y auto para centrar */
   }
   
   .window-header {
     background: rgba(255, 255, 255, 0.05);
-    padding: 15px;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
   }
@@ -708,6 +711,7 @@
     font-family: 'Fira Code', monospace;
     font-size: 0.9rem;
     line-height: 1.5;
+    overflow-x: auto;
   }
   
   .code-content pre {
@@ -716,6 +720,21 @@
   
   .code-content code {
     color: #A5B4FC;
+  }
+  
+  /* Ajustes responsive */
+  @media (max-width: 768px) {
+    .code-window {
+      width: calc(100% - 20px); /* Márgenes más pequeños en móvil */
+      margin: 10px auto;
+    }
+
+    .code-content {
+      padding: 15px;
+      font-size: 0.8rem;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
   }
   
   /* Mejoras en las tarjetas de experiencia */
@@ -1213,42 +1232,131 @@
       text-align: center;
     }
 
-    .nav-links li a {
-      display: block;
-      padding: 15px 20px;
-      width: 100%;
-    }
-
     /* Quitar el efecto de línea en mobile */
     .nav-links li::after {
       display: none;
     }
   }
 
-  * Ajuste del contenido principal para dar espacio al menú lateral */
-main {
-  margin-left: 250px;
-  width: calc(100% - 250px);
-}
-
-/* Responsive para móviles */
-@media (max-width: 768px) {
-  .header {
-    display: none;
+  /* Ajuste para contenido responsivo */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
   }
 
-  main {
-    margin-left: 0;
+  .nav-container,
+  .hero-section,
+  .about-section,
+  .projects-section,
+  .services-section,
+  .contact-section,
+  .tech-container,
+  .projects-grid,
+  .about-content,
+  .services-container {
     width: 100%;
-    padding-top: 0; /* Elimina cualquier padding superior */
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
-  .hero-section {
-    padding-top: 20px; /* Reduce el padding superior */
-    min-height: calc(100vh - 20px); /* Ajusta la altura considerando el padding */
+  .tech-card,
+  .project-card,
+  .service-card,
+  .about-content > * {
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  body {
-    padding-top: 0; /* Asegura que no haya padding superior en el body */
+  @media (max-width: 768px) {
+    .nav-container,
+    .hero-section,
+    .about-section,
+    .projects-section,
+    .services-section,
+    .contact-section {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .experience-card,
+    .certification-card {
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 10px 0;
+      width: auto;
+    }
   }
-}
+
+  /* Ajuste del contenido principal para dar espacio al menú lateral */
+  main {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+  }
+
+  /* Responsive para móviles */
+  @media (max-width: 768px) {
+    .header {
+      display: none;
+    }
+
+    main {
+      margin-left: 0;
+      width: 100%;
+      padding-top: 0; /* Elimina cualquier padding superior */
+    }
+
+    .hero-section {
+      padding-top: 20px; /* Reduce el padding superior */
+      min-height: calc(100vh - 20px); /* Ajusta la altura considerando el padding */
+    }
+
+    body {
+      padding-top: 0; /* Asegura que no haya padding superior en el body */
+    }
+  }
+
+  /* Prevenir scroll horizontal en móviles */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .nav-container,
+  .hero-section,
+  .about-section,
+  .projects-section,
+  .services-section,
+  .contact-section,
+  .tech-container,
+  .projects-grid,
+  .about-content,
+  .services-container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Ajustar padding en móviles */
+  @media (max-width: 768px) {
+    .nav-container,
+    .hero-section,
+    .about-section,
+    .projects-section,
+    .services-section,
+    .contact-section {
+      padding-left: 15px;
+      padding-right: 15px;
+      box-sizing: border-box;
+    }
+
+    .experience-card,
+    .certification-card {
+      position: relative;
+      left: 0;
+      right: 0;
+      margin: 10px 0;
+    }
+  }
