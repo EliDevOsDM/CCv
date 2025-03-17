@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - EliDevOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects-styles.css"> <!-- Nuevo CSS específico para proyectos -->
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="projects-page"> <!-- Clase específica para la página de proyectos -->
+    <!-- Navegación con efecto glassmorphism -->
+
+    <main class="projects-repository">
+        <!-- Cabecera de la página de proyectos -->
+        <div class="repo-header">
+            <h1>Repositorio de Proyectos</h1>
+            <p>Explora todos mis proyectos de desarrollo</p>
+            
+            <!-- Filtros de proyectos -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="flutter">Flutter</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="firebase">Firebase</button>
+                <button class="filter-btn" data-filter="completed">Completados</button>
+                <button class="filter-btn" data-filter="in-progress">En Desarrollo</button>
+            </div>
+        </div>
+
+        <!-- Sección de Proyectos completa -->
+        <section id="todos-proyectos" class="projects-repository-grid">
+            <!-- Proyecto 1: Mi Taxi Ruta -->
+            <div class="repo-card" data-categories="flutter firebase in-progress">
+                <div class="repo-card-image">
+                    <img src="assets/images/taxi.png" alt="Mi Taxi Ruta">
+                    <div class="repo-status">
+                        <span class="status-badge status-in-progress">En Desarrollo</span>
+                    </div>
+                </div>
+                <div class="repo-card-content">
+                    <h3>Mi Taxi Ruta <span class="project-year">2025</span></h3>
+                    <p>Esta es una aplicación que sirve para una cooperativa de taxis.</p>
+                    <div class="repo-tech-tags">
+                        <span class="tech-tag"><i class="fab fa-flutter"></i> Flutter</span>
+                        <span class="tech-tag"><i class="fas fa-fire"></i> Firebase</span>
+                    </div>
+                    <div class="repo-features">
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Mapas interactivos</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Alertas</span>
+                    </div>
+                    <div class="repo-links">
+                        <a href="https://drive.google.com/file/d/1ZFsFjslCdCJ-CY34Pm1ELKsAKIfD403D/view?usp=sharing" class="repo-btn repo-btn-download">
+                            <i class="fas fa-download"></i> Descargar APK
+                        </a>
+                        <a href="https://github.com/EliDevOsDM" class="repo-btn repo-btn-github">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto 2: Calculadora -->
+            <div class="repo-card" data-categories="flutter completed">
+                <div class="repo-card-image">
+                    <img src="assets/images/calc.png" alt="Calculadora">
+                    <div class="repo-status">
+                        <span class="status-badge">Completado</span>
+                    </div>
+                </div>
+                <div class="repo-card-content">
+                    <h3>Calculadora <span class="project-year">2024</span></h3>
+                    <p>Una calculadora con funciones básicas y científicas.</p>
+                    <div class="repo-tech-tags">
+                        <span class="tech-tag"><i class="fab fa-flutter"></i> Flutter</span>
+                    </div>
+                    <div class="repo-features">
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Funciones básicas</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Funciones científicas</span>
+                    </div>
+                    <div class="repo-links">
+                        <a href="https://drive.google.com/file/d/1QbTpKSFtPmEKuK_Y9rFwva5aU9CGMnr9/view?usp=sharing" class="repo-btn repo-btn-download">
+                            <i class="fas fa-download"></i> Descargar APK
+                        </a>
+                        <a href="https://github.com/EliDevOsDM" class="repo-btn repo-btn-github">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto 3: Cortes -->
+            <div class="repo-card" data-categories="flutter firebase completed">
+                <div class="repo-card-image">
+                    <img src="assets/images/cortes.png" alt="Cortes">
+                    <div class="repo-status">
+                        <span class="status-badge">Completado</span>
+                    </div>
+                </div>
+                <div class="repo-card-content">
+                    <h3>Cortes <span class="project-year">2024</span></h3>
+                    <p>Aplicación para gestionar cortes de caja y finanzas.</p>
+                    <div class="repo-tech-tags">
+                        <span class="tech-tag"><i class="fab fa-flutter"></i> Flutter</span>
+                        <span class="tech-tag"><i class="fas fa-fire"></i> Firebase</span>
+                    </div>
+                    <div class="repo-features">
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Gestión financiera</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Reportes</span>
+                    </div>
+                    <div class="repo-links">
+                        <a href="https://github.com/EliDevOsDM" class="repo-btn repo-btn-github">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto Web 1: Portfolio Personal -->
+            <div class="repo-card" data-categories="web completed">
+                <div class="repo-card-image">
+                    <img src="assets/images/1.png" alt="Portfolio Personal">
+                    <div class="repo-status">
+                        <span class="status-badge">Completado</span>
+                    </div>
+                </div>
+                <div class="repo-card-content">
+                    <h3>Tienda Kawaii <span class="project-year">2024</span></h3>
+                    <p>Tienda de ventas de productos Kawaii.</p>
+                    <div class="repo-tech-tags">
+                        <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                    </div>
+                    <div class="repo-features">
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Responsive Design</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Animaciones</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Modo Oscuro</span>
+                    </div>
+                    <div class="repo-links">
+                        <a href="https://kawaiinekoshop.uncapitulomaslibreria.com/" class="repo-btn repo-btn-download">
+                            <i class="fas fa-globe"></i> Ver pagina
+                        </a>
+                        <a href="#" class="repo-btn repo-btn-github">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto Web 2: E-commerce Template -->
+            <div class="repo-card" data-categories="web completed">
+                <div class="repo-card-image">
+                    <img src="assets/images/Diseño sin título (5).png" alt="E-commerce Template">
+                    <div class="repo-status">
+                        <span class="status-badge">Completado</span>
+                    </div>
+
+                </div>
+                <div class="repo-card-content">
+                    <h3>Un capitulo mas<span class="project-year">2024</span></h3>
+                    <p>Plantilla para tienda online con carrito de compras y sistema de pagos integrado.</p>
+                    <div class="repo-tech-tags">
+                        <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i> MySQL</span>
+                    </div>
+                    <div class="repo-features">
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Carrito de compras</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Pasarela de pagos</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Panel de administración</span>
+                    </div>
+                    <div class="repo-links">
+                        <a href="https://uncapitulomaslibreria.com/" class="repo-btn repo-btn-download">
+                            <i class="fas fa-globe"></i> Ver Pagina
+                        </a>
+                        <a href="#" class="repo-btn repo-btn-github">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto Web 3: Blog Personal -->
+            <div class="repo-card" data-categories="web in-progress">
+                <div class="repo-card-image">
+                    <img src="assets/images/Diseño sin título (6).png" alt="Blog Personal">
+                    <div class="repo-status">
+                        <span class="status-badge status-in-progress">En Desarrollo</span>
+                    </div>
+                </div>
+                <div class="repo-card-content">
+                    <h3>Saberi academy<span class="project-year">2025</span></h3>
+                    <p>Blog para compartir artículos sobre desarrollo y tecnología.</p>
+                    <div class="repo-tech-tags">
+                        <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                    </div>
+                    <div class="repo-features">
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Tema personalizado</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Comentarios</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> SEO optimizado</span>
+                    </div>
+                    <div class="repo-links">
+                        <a href="https://mediumturquoise-clam-505052.hostingersite.com/" class="repo-btn repo-btn-download">
+                            <i class="fas fa-globe"></i> Ver pagina
+                        </a>
+                        <a href="#" class="repo-btn repo-btn-github">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Puedes añadir más proyectos aquí -->
+            
+        </section>
+        
+        <div class="back-to-home">
+            <a href="index.html" class="cta-button"><i class="fas fa-home"></i> Volver al inicio</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 EliDevOS. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+    <script src="a.js"></script> <!-- Nuevo JS específico para proyectos -->
+</body>
+</html>

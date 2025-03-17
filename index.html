@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliDevOS - Desarrollador Móvil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Añadir justo después de la apertura del body -->
+    <div id="particles-js"></div>
+
+    <!-- Añadir después de la apertura del body, después del div particles-js -->
+    <div class="geometric-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navegación con efecto glassmorphism -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">EliDevOS</a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <h1><span class="reveal-text" data-text="Hola, soy">Hola, soy</span> <span class="highlight">EliDevOS</span></h1>
+            <h2 class="typewriter">Desarrollador Móvil</h2>
+            <p>Especializado en Flutter, Python, MySQL y Firebase</p>
+            <a href="#contacto" class="cta-button">Contáctame</a>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Mí actualizada -->
+    <section id="sobre-mi" class="about-section">
+        <h2>Sobre Mí</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>¡Hola! Soy <span class="highlight">EliDevOS</span></h3>
+                <p class="lead-text">Desarrollador Junior, apasionado por la tecnología y el desarrollo móvil.</p>
+                <p>Aunque estoy iniciando mi camino en el desarrollo de software, me apasiona crear soluciones tecnológicas y estoy constantemente aprendiendo nuevas tecnologías. Busco mi primera oportunidad para demostrar mi potencial y crecer profesionalmente.</p>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Compromiso</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Disponibilidad para Aprender</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Ganas de Crecer</span>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Dart</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Firebase</span>
+                </div>
+            </div>
+            <div class="about-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-buttons">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="window-title">main.dart</div>
+                    </div>
+                    <div class="code-content">
+                        <pre><code>
+class JuniorDeveloper {
+  final String name = "EliDevOS";
+  final List<String> skills = [
+    "Flutter", "Python",
+    "MySQL", "Firebase"
+  ];
+  
+  String get passion =>
+    "Aprender y crecer cada día";
+    
+  Future<void> code() async {
+    while (true) {
+      learnNewTechnologies();
+      buildSideProjects();
+      seekOpportunities();
+      neverGiveUp();
+    }
+  }
+}</code></pre>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Tecnologías -->
+    <section id="tecnologias" class="tech-section">
+        <h2>Tecnologías que manejo</h2>
+        <div class="tech-container">
+            <div class="tech-card">
+                <i class="fab fa-flutter tech-icon"></i>
+                <h3>Flutter</h3>
+                <p>Desarrollo de aplicaciones móviles multiplataforma</p>
+            </div>
+            <div class="tech-card">
+                <i class="fab fa-python tech-icon"></i>
+                <h3>Python</h3>
+                <p>Desarrollo backend y automatización</p>
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-database tech-icon"></i>
+                <h3>MySQL</h3>
+                <p>Gestión y diseño de bases de datos</p>
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-fire tech-icon"></i>
+                <h3>Firebase</h3>
+                <p>Backend as a Service y tiempo real</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos mejorada -->
+    <section id="proyectos" class="projects-section">
+        <h2>Mis Proyectos</h2>
+        <div class="projects-grid">
+            <!-- Mantener solo 3-4 tarjetas de proyectos aquí -->
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/calc.png" alt="App Weather" loading="lazy">
+                    <div class="project-status">
+                        <span class="status-badge">Completado</span>
+                    </div>
+                    <div class="project-badges">
+                        <span class="project-badge"><i class="fab fa-flutter"></i> Flutter</span>
+                        <span class="project-badge"><i class="fas fa-cloud"></i> API</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>CalculadoraMTP <span class="project-year">2024</span></h3>
+                    <p class="project-description">Aplicacion que sirve para realizar ejercicion de distintas areas del collegio</p>
+                    <div class="project-features">
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Calculadora de Fisica</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Calculadora de Matematicas</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Calculadora de Redes</span>
+                    </div>
+                    <div class="project-actions">
+                        <div class="project-links">
+                            <a href="#" class="btn-download">
+                                <i class="fas fa-download"></i> Descargar APK
+                            </a>
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>  
+
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/taxi.png" alt="App Weather" loading="lazy">
+                    <div class="project-status">
+                        <span class="status-badge status-in-progress">En Desarrollo</span>
+                    </div>
+                    <div class="project-badges">
+                        <span class="project-badge"><i class="fab fa-flutter"></i> Flutter</span>
+                        <span class="project-badge"><i class="fas fa-cloud"></i> API</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Mi Taxi Ruta <span class="project-year">2025</span></h3>
+                    <p class="project-description">Esta es una aplicación que sirve para una cooperativa de taxis.</p>
+                    <div class="project-features">
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Consulta de taxis disponibles</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Taxi seguro</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Chat con el conductor</span>
+                    </div>
+                    <div class="project-actions">
+
+                        <div class="project-links">
+                            <a href="#" class="btn-download">
+                                <i class="fas fa-download"></i> Descargar APK
+                            </a>
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/images/cortes.png" alt="App Weather" loading="lazy">
+                    <div class="project-status">
+                        <span class="status-badge">Completado</span>
+                    </div>
+                    <div class="project-badges">
+                        <span class="project-badge"><i class="fab fa-flutter"></i> Flutter</span>
+                        <span class="project-badge"><i class="fas fa-cloud"></i> API</span>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3>Consulta Cortes EC <span class="project-year">2024</span></h3>
+                    <p class="project-description">Esta es una aplicación que sirve para consultar los cortes de electricidad de Guayaquil.</p>
+                    <div class="project-features">
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Consulta de cortes de electricidad</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Consultas 24/7</span>
+                        <span class="feature-item"><i class="fas fa-check-circle"></i> Actualizaciones diarias</span>
+                    </div>
+                    <div class="project-actions">
+                        <div class="project-links">
+                            <a href="#" class="btn-download">
+                                <i class="fas fa-download"></i> Descargar APK
+                            </a>
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- Añadir botón para ver todos los proyectos -->
+        <div class="load-more-container">
+            <a href="projects.html" class="load-more-btn">Ver todos los proyectos <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios actualizada -->
+    <section id="servicios" class="services-section">
+        <h2>¿Por qué trabajar conmigo?</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Desarrollador Motivado</h3>
+                <ul class="service-features">
+                    <li>Alta capacidad de aprendizaje</li>
+                    <li>Comprometido con cada proyecto</li>
+                    <li>Dispuesto a crecer y mejorar</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Aprendizaje Continuo</h3>
+                <ul class="service-features">
+                    <li>Actualización constante</li>
+                    <li>Abierto a feedback</li>
+                    <li>Mentalidad de crecimiento</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact-section">
+        <h2>Contacto</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="mailto:elidevosdm@ejemplo.com"><i class="fas fa-envelope"></i> EliDevOSDM@ejemplo.com</a>
+                <a href="https://www.linkedin.com/in/elias-dlucca-634821332/?trk=opento_sprofile_topcard"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/elidevosdm"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 EliDevOS. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+
+    <!-- Modal para mostrar las pantallas -->
+    <div id="screensModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <div class="screens-gallery" id="modalGallery">
+                <!-- Las imágenes se cargarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Añadir antes del cierre del body -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'particles.json');
+    </script>
+
+    <div class="loading-screen">
+      <div class="loader"></div>
+    </div>
+</body>
+</html>
